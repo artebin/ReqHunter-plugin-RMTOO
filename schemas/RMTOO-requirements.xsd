@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<xsd:schema xmlns:RMTOO="http://trevize.net/RMTOO" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://trevize.net/RMTOO">
+
+	<xsd:element name="requirements" type="RMTOO:requirements_t" />
+
+	<xsd:complexType name="requirements_t">
+		<xsd:sequence maxOccurs="unbounded" minOccurs="0">
+			<xsd:element name="requirement" type="RMTOO:requirement_t" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="requirement_t">
+		<xsd:sequence maxOccurs="1" minOccurs="0">
+			<xsd:element name="id" type="xsd:string" maxOccurs="1"
+				minOccurs="0" />
+			<xsd:element name="name" type="xsd:string" maxOccurs="1"
+				minOccurs="0" />
+			<xsd:element name="type" type="xsd:string" maxOccurs="1"
+				minOccurs="0" />
+			<xsd:element name="invented_on" type="xsd:string"
+				maxOccurs="1" minOccurs="0" />
+			<xsd:element name="invented_by" type="xsd:string"
+				maxOccurs="1" minOccurs="0" />
+			<xsd:element name="owner" type="xsd:string" maxOccurs="1"
+				minOccurs="0" />
+			<xsd:element name="description" type="xsd:string"
+				maxOccurs="1" minOccurs="0" />
+			<xsd:element name="rationale" type="xsd:string"
+				maxOccurs="1" minOccurs="0" />
+			<xsd:element name="note" type="xsd:string" maxOccurs="1"
+				minOccurs="0" />
+			<xsd:element name="solved_by" type="xsd:string"
+				maxOccurs="1" minOccurs="0" />
+			<xsd:element name="status" type="xsd:string" maxOccurs="1"
+				minOccurs="0" />
+			<xsd:element name="topic" type="xsd:string" maxOccurs="1"
+				minOccurs="0" />
+			<xsd:element name="class" type="xsd:string" maxOccurs="1"
+				minOccurs="0" />
+			<xsd:element name="priority" type="xsd:string" maxOccurs="1"
+				minOccurs="0" />
+			<xsd:element name="effort_estimation" type="xsd:string"
+				maxOccurs="1" minOccurs="0" />
+			<xsd:element name="constraints" type="xsd:string"
+				maxOccurs="1" minOccurs="0" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+</xsd:schema>
